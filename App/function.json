@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ],
+      "route": "{TopDomain:alpha?}/{MidDomain:alpha?}/{LowDomain1:alpha?}/{LowDomain2:alpha?}/{LowDomain3:alpha?}/{LowDomain4:alpha?}/{LowDomain5:alpha?}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
